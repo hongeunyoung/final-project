@@ -1,0 +1,242 @@
+body {
+    background-color: #DFD4E4;
+    font-family: 'Poor Story', cursive;
+}
+
+.bg {
+  background-color: white;
+  border-radius: 30px;
+
+  position: absolute;
+  display: flex;
+  top: 5%;
+  left: 3%;
+  width: 94vw;
+  height: 90vh;
+}
+
+.frame {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15%;
+  left: 14%;
+  width: 30vw;
+  height: 30vh;
+
+  z-index: 998;
+}
+
+.wrap { 
+    width: 20vw;
+    height: 31vh;
+    position: relative;
+    overflow: hidden;
+    border-radius : 50%;  
+    background: #DFD4E4;
+    background: linear-gradient(180deg, #DFD4E4 37%, #FFE4AF 81%);
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    transform: translate3d(0, 0, 0);
+}
+
+.wrap:hover {
+    background: #FFE4AF;
+}
+
+.envelope {
+  width: 22vw;
+  height: 22vh;
+
+  position: fixed;
+  
+  cursor: help;
+
+  z-index: 998;
+}
+
+.recipe_envelope {            
+    left: 20%;
+    top: 60%;
+}
+
+.restaurant_envelope {
+    left: 57%;
+    top: 60%;
+}
+
+.envelope-close {
+    display: block;
+}
+
+.recipe {
+    background-color: ivory;
+
+    height: 500px;
+    width: 99%;
+
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+
+    overflow: auto;
+}
+
+.recipe::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.recipe::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #FFD700; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.recipe::-webkit-scrollbar-track {
+    background: #FAFAD2;  /*스크롤바 뒷 배경 색상*/
+}
+
+.restaurant {
+    background-color: ivory;
+
+    height: 500px;
+    width: 99%;
+
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+
+    overflow: auto;
+}
+
+#quail {
+    width: 17vw;
+    height: 31vh;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: url("cursor.cur"), auto;
+}
+
+.bubble {
+  width: 30vw;
+
+  position: absolute;
+  top: 15%;
+  left: 45%;
+
+  text-align: left;
+  padding : 1% 2%;
+
+  background-color: #DFD4E4;
+  border-radius: 40px / 40px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+
+  z-index: 998;
+}
+
+.bubble > p {
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+}
+
+.bubble > #re {
+    width: 4vw;
+    height: 5vh;
+
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3vmin;
+
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    top: 43%;
+    right: 45%;
+
+    z-index: 999;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #DFD4E4;
+    color: white;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #DFD4E4;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.next {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  z-index: 1000;
+}
