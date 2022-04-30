@@ -19,9 +19,15 @@ var audio = new Audio('https://cdn.discordapp.com/attachments/968536631512543262
 
           $('a.btn').click(function() {
             count++
+            $('p#menu_text').text('추천 메뉴는 ' +  menu[count] + '입니다.')
 
             if(count == 4) {
               $('a.btn').css('display', 'none')
             }
           });
+
+          var menu_list = $('input[name=menu]').val()
+          menu = menu_list.split(" ");
+
+          $('p#menu_text').text('추천 메뉴는 ' +  menu[count] + '입니다.')
         });
