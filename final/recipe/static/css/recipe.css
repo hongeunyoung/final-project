@@ -1,0 +1,149 @@
+body {
+    background-color: #DFD4E4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.bg {
+  background-color: ivory;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 75vw;
+  height: 93vh;
+
+  border-top-left-radius: 30px;
+}
+
+.content {
+    background-color: ivory;
+
+    height: 93%;
+    width: 74%;
+
+    position: absolute;
+    top: 7%;
+    left: 26%;
+
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+.content::-webkit-scrollbar-thumb {
+    height: 3%; /* 스크롤바의 길이 */
+    background: rgb(168, 125, 168); /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: #FAFAD2;  /*스크롤바 뒷 배경 색상*/
+}
+
+.frame {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8%;
+  left: 2.5%;
+  width: 20vw;
+  height: 20vh;
+
+  z-index: 998;
+}
+
+.wrap { 
+    width: 20vw;
+    height: 31vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius : 50%;  
+    background: rgb(168, 125, 168);
+    background: linear-gradient(180deg, rgb(168, 125, 168) 37%, #FFE4AF 81%);
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    transform: translate3d(0, 0, 0);
+}
+
+.wrap:hover {
+    background: #FFE4AF;
+}
+
+.envelope {  
+    cursor: help;
+
+    z-index: 998;
+}
+
+.recipe_envelope {    
+    width: 22vw;
+    height: 22vh;
+
+    position: fixed;         
+    left: 1.5%;
+    top: 40%;
+}
+
+.restaurant_envelope {
+    width: 21vw;
+    height: 21vh;
+
+    position: fixed;
+    left: 2.5%;
+    top: 70%;
+}
+
+#quail {
+    width: 17vw;
+    height: 31vh;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: url("https://cdn.discordapp.com/attachments/968536631512543262/969992455183294534/cursor.cur"), auto;
+}
+
+#recipe {
+    width: 22vw;
+    height: 22vh;
+
+    position: fixed;
+    left: 8%;
+    top: 55%;
+
+    color: rgb(158, 99, 158);
+    font-size: 4vmin;
+
+    z-index: 998;
+}
+
+#restaurant {
+    width: 22vw;
+    height: 22vh;
+
+    position: fixed;
+    left: 9%;
+    top: 85%;
+
+    color: rgb(158, 99, 158);
+    font-size: 4vmin;
+
+    z-index: 998;
+}
+
+.next {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    z-index: 1000;
+  }

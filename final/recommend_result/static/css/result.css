@@ -31,7 +31,7 @@ body {
 .wrap { 
     width: 20vw;
     height: 31vh;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     border-radius : 50%;  
     background: #DFD4E4;
@@ -69,47 +69,32 @@ body {
     display: block;
 }
 
-.recipe {
-    background-color: ivory;
+#recipe {
+    width: 22vw;
+    height: 22vh;
 
-    height: 500px;
-    width: 99%;
+    position: fixed;
+    left: 27%;
+    top: 79%;
 
-    display: none;
+    color: rgb(189, 160, 189);
+    font-size: 4vmin;
 
-    position: absolute;
-    bottom: 0;
-
-    overflow: auto;
+    z-index: 998;
 }
 
-.recipe::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바의 너비 */
-}
+#restaurant {
+    width: 22vw;
+    height: 22vh;
 
-.recipe::-webkit-scrollbar-thumb {
-    height: 10%; /* 스크롤바의 길이 */
-    background: #FFD700; /* 스크롤바의 색상 */
-    
-    border-radius: 10px;
-}
+    position: fixed;
+    left: 65%;
+    top: 79%;
 
-.recipe::-webkit-scrollbar-track {
-    background: #FAFAD2;  /*스크롤바 뒷 배경 색상*/
-}
+    color: rgb(189, 160, 189);
+    font-size: 4vmin;
 
-.restaurant {
-    background-color: ivory;
-
-    height: 500px;
-    width: 99%;
-
-    display: none;
-
-    position: absolute;
-    bottom: 0;
-
-    overflow: auto;
+    z-index: 998;
 }
 
 #quail {
@@ -121,7 +106,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 
-    cursor: url("cursor.cur"), auto;
+    cursor: url("https://cdn.discordapp.com/attachments/968536631512543262/969992455183294534/cursor.cur"), auto;
 }
 
 .bubble {
@@ -167,8 +152,8 @@ body {
     border-radius: 100px;
     transition: all .2s;
     position: absolute;
-    top: 43%;
-    right: 45%;
+    top: 105%;
+    right: 10%;
 
     z-index: 999;
 }
@@ -225,18 +210,4 @@ body {
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-.next {
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: none;
-
-  z-index: 1000;
 }

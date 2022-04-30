@@ -3,20 +3,6 @@ var audio = new Audio('https://cdn.discordapp.com/attachments/968536631512543262
         var count = 0;
 
         $(function() {
-          $('img.recipe_envelope').click(function() {
-            $('div.recipe').css('display', 'block')
-            $('div.restaurant').css('display', 'none')
-          });
-
-          $('img.restaurant_envelope').click(function() {
-            $('div.restaurant').css('display', 'block')
-            $('div.recipe').css('display', 'none')
-          });
-
-          $('img.envelope').click(function() {
-            $('.next').fadeIn(500).fadeOut(500)
-          })
-
           $('a.btn').click(function() {
             count++
             $('p#menu_text').text('추천 메뉴는 ' +  menu[count] + '입니다.')
