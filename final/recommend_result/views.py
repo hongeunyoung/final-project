@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http.response import HttpResponse
 
 def result(request):
     return render(request, "result.html")

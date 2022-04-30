@@ -108,7 +108,7 @@ body {
     cursor: url("https://cdn.discordapp.com/attachments/968536631512543262/969992455183294534/cursor.cur"), auto;
 }
 
-#restaurant {
+#recipe {
     width: 22vw;
     height: 22vh;
 
@@ -122,7 +122,7 @@ body {
     z-index: 998;
 }
 
-#recipe {
+#restaurant {
     width: 22vw;
     height: 22vh;
 
