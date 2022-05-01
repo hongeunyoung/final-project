@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def quest(request):
+    return render(request, "quest.html")
+
+def quest(request):
+    answer = '하..'
+    return render(request, 'quest.html', {'answer' : answer})

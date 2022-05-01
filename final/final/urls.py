@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('question/', include('question.urls')),
     path('recommend_result/', include('recommend_result.urls')),
     path('recipe/', include('recipe.urls')),
     path('restaurant/', include('restaurant.urls')),
