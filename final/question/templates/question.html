@@ -9,12 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'css/question.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/static/js/bubble.js" type="text/javascript"></script>
+    <script src="/static/js/bubble1.js" type="text/javascript"></script>
     <script src="/static/js/question.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="user">
-        <p id="answer">{{answer}}</p>
+    <div class="frame">
+        <div class="wrap">
+          <img id="quail" src="https://cdn.discordapp.com/attachments/968536631512543262/969115672854536242/1.png">
+        </div>
       </div>
+
+      <div class="info">먹탐정 메추리에게 메뉴를 의뢰하시겠어요?</div>
+      <a href="#" class="btn btn-white btn-animate">네</a>
+
+      <div class="bubble1">
+        <p>말해주기 싫어요.</p>
+      </div>
+
+      <div class="bubble2">
+        <p>정보를 알려주세요.</p>
+      </div>
+
+      <a href="#" class="btn1 btn-white btn-animate" onclick="location.href='/recommend_result/'">추천 결과 보기</a>
+  
 </body>
 </html>
