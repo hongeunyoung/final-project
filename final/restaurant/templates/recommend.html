@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kakao 지도 시작하기</title>
+    <link rel="stylesheet" href="./static/css/index.css" />
+  </head>
+  <body>
+    <div id="header"><h1>현재 정보 페이지</h1></div>
+    <div class="grid-container">
+      <div
+        class="grid-item"
+        id="staticMap"
+        style="width: 600px; height: 350px"
+      ></div>
+      <div id="descr">식당 설명(크롤링 해야함)</div>
+      <div class="hAddr">
+        <!-- <span class="title">지도중심기준 행정동 주소정보</span> -->
+        <span id="centerAddr"></span>
+      </div>
+      <div class="grid-item" id="location">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=299130bb707a126f0bc34276fabfa388&libraries=services,clusterer,drawing"
+    ></script>
+    <script src="./static/js/index.js"></script>
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://mechuri.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </body>
+</html>
