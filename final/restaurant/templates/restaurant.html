@@ -1,35 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>레시피 정보</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/restaurant.css' %}">
+  <head>
+    <meta charset="UTF-8" />
+    <title>식당 정보</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/restaurant.css' %}"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/static/js/restaurant.js" type="text/javascript"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="frame">
       <div class="wrap">
-        <img id="quail" src="https://cdn.discordapp.com/attachments/968536631512543262/969115672854536242/1.png" onclick="location.href='/recommend_result/result/'">
+        <img id="quail"
+        src="https://cdn.discordapp.com/attachments/968536631512543262/969115672854536242/1.png"
+        //하은이 onclick="location.href='/recommend_result/result/'" />
       </div>
     </div>
 
     <div class="envelope">
-        <img class="restaurant_envelope" src='https://media.discordapp.net/attachments/968536631512543262/969231512849514577/open_en-removebg-preview.png'>
-        <p id="restaurant">식당 정보</p>
-        <img class="recipe_envelope" src='https://cdn.discordapp.com/attachments/968536631512543262/969231512543301652/close_en-removebg-preview.png' onclick="location.href='/recipe/recipe/'">
-        <p id="recipe">레시피 정보</p>
+      <img class="restaurant_envelope"
+      src="https://media.discordapp.net/attachments/968536631512543262/969231512849514577/open_en-removebg-preview.png"//뜯긴편지
+      />
+      <p id="restaurant">식당 정보</p>
+      <img class="recipe_envelope"
+      src="https://cdn.discordapp.com/attachments/968536631512543262/969231512543301652/close_en-removebg-preview.png"//봉인편지
+      onclick="location.href='/recipe/recipe/'" />
+      <p id="recipe">레시피 정보</p>
     </div>
 
-    <div class="bg"></div> 
+    <div class="bg"></div>
     <div class="content">
       <h1>식당 정보입니다~</h1>
-   </div>
+    </div>
 
-   <div class="next"></div>
-</body>
+    <div class="next"></div>
+  </body>
 </html>
