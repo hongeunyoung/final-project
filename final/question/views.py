@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import speech_recognition as sr
+#import speech_recognition as sr
 
 def question(request):
     return render(request, "question.html")
