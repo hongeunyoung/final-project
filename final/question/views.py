@@ -1,8 +1,15 @@
 from django.shortcuts import render
+import speech_recognition as sr
 
-def quest(request):
-    return render(request, "quest.html")
+def question(request):
+    return render(request, "question.html")
 
-def quest(request):
-    answer = '하..'
-    return render(request, 'quest.html', {'answer' : answer})
+def question(request):
+    #이거 안됨!
+    #Recognizer = sr.Recognizer() 
+    #mic = sr.Microphone()
+    #with mic as source:
+    #    audio = Recognizer.listen(source)
+    #data = Recognizer.recognize_google(audio, language="ko")
+    data = '하'
+    return render(request, 'question.html', {'answer' : data})
