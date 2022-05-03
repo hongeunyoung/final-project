@@ -120,7 +120,7 @@ body {
   padding : 1% 2%;
 
   background-color: #DFD4E4;
-  border-radius: 40px / 40px;
+  border-radius: 40px;
   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 
   z-index: 998;
@@ -130,15 +130,6 @@ body {
     font-size: 4vmin;
     font-weight: bold;
     color: white;
-}
-
-.bubble > #re {
-    width: 4vw;
-    height: 5vh;
-
-    position: absolute;
-    top: 25%;
-    right: 15%;
 }
 
 .btn:link,

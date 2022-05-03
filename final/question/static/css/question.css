@@ -1,0 +1,213 @@
+body {
+    background-color: #DFD4E4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.frame {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    left: 35%;
+    width: 30vw;
+    height: 30vh;
+  
+    z-index: 998;
+}
+  
+  .wrap { 
+      width: 25vw;
+      height: 36vh;
+      position: absolute;
+      overflow: hidden;
+      border-radius : 50%;  
+      background: #DFD4E4;
+      background: linear-gradient(180deg, #DFD4E4 37%, #FFE4AF 81%);
+      box-shadow: 0px 0px 30px #fff;
+      transform: translate3d(0, 0, 0);
+  }
+  
+  .wrap:hover {
+      background: #FFE4AF;
+  }
+
+  #quail {
+    width: 21vw;
+    height: 35vh;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: url("https://cdn.discordapp.com/attachments/968536631512543262/969992455183294534/cursor.cur"), auto;
+}
+
+.info {
+    width: 40vw;
+  
+    position: absolute;
+    top: 60%;
+    left: 25%;
+  
+    text-align: center;
+    padding : 2% 2%;
+  
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px #fff;
+    
+    font-size: 4.3vmin;
+    font-weight: 900;
+    color: #DFD4E4;
+  
+    z-index: 998;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3vmin;
+
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px #fff;
+    border: 5px solid white;
+    
+    transition: all .2s;
+    position: absolute;
+    top: 77%;
+    right: 28%;
+
+    z-index: 999;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 40px white;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #DFD4E4;
+    color: white;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #DFD4E4;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.bubble1 {
+    width: 30vw;
+  
+    position: absolute;
+    top: 35%;
+    left: 55%;
+  
+    text-align: left;
+    padding : 1% 2%;
+  
+    background-color: #DFD4E4;
+    border-radius: 40px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 5px #fff;
+  
+    z-index: 998;
+
+    display: none;
+  }
+  
+  .bubble1 > p {
+      font-size: 4vmin;
+      font-weight: 900;
+      color: white;
+  }
+
+  .bubble2 {
+    width: 30vw;
+  
+    position: absolute;
+    top: 15%;
+    left: 35%;
+  
+    text-align: left;
+    padding : 1% 2%;
+  
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px #fff;
+  
+    z-index: 998;
+
+    display: none;
+  }
+  
+  .bubble2 > p {
+      font-size: 4vmin;
+      font-weight: 900;
+      color: #DFD4E4;
+  }
+
+  .btn1:link,
+.btn1:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3vmin;
+
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px #fff;
+    border: 5px solid white;
+    
+    transition: all .2s;
+    position: absolute;
+    top: 77%;
+    right: 28%;
+
+    z-index: 999;
+
+    display: none;
+}
