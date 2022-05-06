@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color:#DFD4E4;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index:0;
+}
+
+#haeun{
+  position:absolute;
+  top:8%;
+  left: 40px;
+  width: 17vw;
+  height: 25vh;
+}
+
+.topnav {
+  position:absolute;
+  top:26%;
+  right:5.55%;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #DFD4E4;
+}
+
+</style>
+</head>
+<body>
+    <div>
+        <br></br>
+        <br></br>
+    </div>
+    
+    <div style="display:flex;">
+        {% comment %} <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>  {% endcomment %}
+        <div id='haeun'>
+            <img id="haeun" src="https://media.discordapp.net/attachments/968536631512543262/971836597215592498/haeun.JPEG?width=956&height=956" onclick="location.href='/recommend_result/'">
+        </div>
+
+        <div style="display:block;">
+            <div><br></br><br></br><br></br><br></div>
+
+            <div style="display:flex;">
+                
+        <div class="topnav">
+            <a href="/recommend_result/"> [ BACK ]</a>
+            <a href="/recipe">RECIPE</a>
+            <a href="/restaurant/">RESTAURANT</a>
+        </div>
+         
+            
+    </div>
+
+{%block content%}
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+   {%endblock%}
+</div>
+
+</body>
+</html>
+
